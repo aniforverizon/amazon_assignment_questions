@@ -1,0 +1,42 @@
+class user{
+   
+     String  ph;
+     String mail, name,addr;
+     String gen;
+     
+void gender()
+{gen ="Male";
+System.out.println("gender : "+gen);
+}
+
+void phone_num()
+{ph= "8538173518";
+System.out.println("phone number : "+ph);
+}
+
+void e_mail()
+{mail = "anubhavchaturvedi@gmail.com";
+System.out.println("email : "+ mail);
+}
+
+void name_addr()
+{ name = "Anubhav Chaturvedi";
+ addr ="Vadodara";
+ System.out.println("Name : "+name);
+ System.out.println("address :" +addr);
+}
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	user x = new user();
+	
+	x.name_addr();
+	x.phone_num();
+	x.gender();
+	x.e_mail();
+	
+	}
+}
