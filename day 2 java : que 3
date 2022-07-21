@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+System.out.println("enter any number");
+int x = sc.nextInt();
+int c=0,a=0;
+while (x>0)
+{a = x%10;
+if(a==7)
+{c++;
+}
+x/=10;
+}
+
+System.out.println("total no. of 7 in the given number = "+c);
+
+	
+	}
+}
