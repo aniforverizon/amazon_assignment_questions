@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main
+{
+Scanner sc = new Scanner(System.in);
+
+public void details(String source, String dest, String type, int dis, int duration)
+{
+    int z=0;
+    
+    if(dis>=100)
+    {z = dis* 70;
+    
+    }
+    
+    else if (dis>=70)
+    {z= dis*50;
+   
+    }
+    
+    else if (dis>=50)
+    {z= dis*40;
+    
+    }
+    
+    else
+    {z= dis*35;
+    }
+    
+    System.out.println("trip details:");
+    System.out.println("source :"+source);
+    System.out.println("destination :"+dest);
+    System.out.println("type : "+ type);
+    System.out.println("distance :"+ dis);
+    System.out.println("duration :"+duration);
+}
+
+	public static void main(String[] args) {
+		
+		Main r = new Main();
+		r.details("vadodara", "surat","sedan",140,4);
+		
+	}
+}
