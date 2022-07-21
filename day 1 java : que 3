@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		int x;
+		System.out.println("enter the amount");
+		Scanner sc = new Scanner(System.in);
+		x = sc.nextInt();
+		
+		double y =0;
+		y += (x*18/100);
+		y+=x;
+		System.out.println("total amount with GST : "+ y);
+		
+	}
+}
