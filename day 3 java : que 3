@@ -1,0 +1,28 @@
+class bank{
+long bal, accno;
+String name;
+
+void balance(long val)
+{ this.bal = val;
+}
+
+void details()
+{ name = "Anubhav Chaturvedi";
+
+accno = 647436879;
+
+System.out.println("name : "+name);
+System.out.println("balance : "+bal);
+System.out.println("account no."+accno);
+}
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+	bank x = new bank();
+	x.balance(35000);
+	x.details();
+	
+	}
+}
