@@ -1,0 +1,42 @@
+class dish{
+    String name;
+    int ratings, price,qt=7;
+    
+void Name()
+{ name = "Melamine Plates";
+System.out.println("name of the product : "+name);
+}
+
+void details()
+{ ratings =4;
+price = 900;
+
+System.out.println("details of the product:-");
+System.out.println("ratings : "+ratings);
+System.out.println("price: "+price);
+System.out.println("quantity: "+qt);
+}
+
+void decrement()
+{qt--;
+System.out.println("quantity: "+qt);
+}
+
+void increment()
+{qt++;
+System.out.println("quantity: "+qt);
+}
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	dish x = new dish();
+	x.Name();
+	x.details();
+	x.increment();
+	
+	}
+}
