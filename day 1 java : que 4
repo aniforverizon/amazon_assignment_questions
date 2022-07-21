@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the distance");
+		int dis = sc.nextInt();
+		int price ;
+		if(dis>=70)
+		{price = 500;
+		}
+		else if (dis>=50)
+		{price = 300;
+		}
+		
+		else if (dis>=40)
+		{price = 250;
+		}
+		
+		else
+		{price = 150;
+		}
+		
+		int cost = price*dis;
+		
+		System.out.println("total cost = "+ cost);
+		
+	}
+}
